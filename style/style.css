@@ -139,6 +139,7 @@ nav li:hover a {
 main{
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 2rem;
     /* flex: 2 1; */
 }
 
@@ -180,6 +181,7 @@ main{
     background-color: var(--soft-red);
     border: none;
     color: var(--off-white);
+    font-weight: 400;
     padding: 0.8rem 1.3rem 0.8rem 1.3rem;
     text-align: center;
     text-transform: uppercase;
@@ -198,13 +200,18 @@ main{
 /* main__new-articles */
 
 .main__new-articles{
-    flex: 25%;
+    flex: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
+
     background-color: var(--Very-dark-blue);
     padding: 1em;
 }
 .main__new-articles > h1{
     color: var(--soft-orange);
-    font-size: 2em;
+    font-size: 2.2em;
     padding-bottom: 1rem;
 }
 .main__new-articles article:not(:last-child) {
@@ -248,7 +255,7 @@ main{
     cursor: pointer;
 }
 .under-articles__item img{
-    max-width: 40%;
+    max-width: 30%;
     float: left;
     margin-right: 0.5em;
 }
@@ -258,7 +265,7 @@ main{
 
 .attribution {
     display: block;
-
+    margin: 1rem;
 }
 
 @media all and (max-width: 375px) {
