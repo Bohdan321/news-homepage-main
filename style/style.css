@@ -94,6 +94,7 @@ nav ul li {
     /* margin: 1rem 2rem 1rem 2rem; */
 }
 nav a {
+    color: var(--dark-grayish-blue);
     text-decoration: none;
 }
 nav li:hover a {
@@ -176,6 +177,7 @@ main{
     position: relative;
     }
 .main__left-section div p{
+    color: var(--dark-grayish-blue);
     margin-bottom: 1rem;
     line-height: 1.3em;
     text-align: justify;
