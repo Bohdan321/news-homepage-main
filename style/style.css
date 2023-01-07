@@ -141,6 +141,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 2rem;
+    gap: 1vw;
     /* flex: 2 1; */
 }
 
@@ -148,7 +149,6 @@ main{
 
 .main__left-section {
     flex: 65%;
-    padding-right: 1vw;
     display: flex;
     flex-wrap: wrap;
     
@@ -167,7 +167,7 @@ main{
     /* display: block; */
     font-size: 3rem;
     color: var(--Very-dark-blue);
-    font-weight: 900;
+    font-weight: 800;
     padding-right: 1rem;
     line-height: 3.1rem;
 }
