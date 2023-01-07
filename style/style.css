@@ -14,7 +14,9 @@
     font-size: 15px;
     color: var(--Very-dark-blue);
     
+    
 }
+
 :root{
     /* Width of Devices */
     --Mobile: 375px;
@@ -29,12 +31,10 @@
     --dark-grayish-blue: hsl(236, 13%, 42%);
     --Very-dark-blue: hsl(240, 100%, 5%);
 }
-h1{
-    /* font-size: clamp(50px, 5vw, 150px); */
-    /* text-indent: 0.2px; */
-}
-html, body{
+
+body{
     background-color: var(--off-white);
+    width: auto;
     height: 100%;
 }
 
@@ -57,6 +57,7 @@ body {
 
 /* header */
 header {
+    margin-top: 3rem;
     display: flex;
     justify-content: space-between;
     /* justify-items: flex-end; */
@@ -86,13 +87,7 @@ header > div.nav__big-letter {
 nav > ul {
     list-style-type: none;
 }
-.nav-menu li {
-    /* display: inline-block; */
-}
-nav ul li {
-    /* position: relative; */
-    /* margin: 1rem 2rem 1rem 2rem; */
-}
+
 nav a {
     color: var(--dark-grayish-blue);
     text-decoration: none;
@@ -106,14 +101,12 @@ nav li:hover a {
 /* burger */
 .menu-btn {
     display: none;
-    /* background-color: aqua; */
     cursor: pointer;
     width: 30px;
 	height: 30px;
 	position: relative;
 	z-index:2;
 	overflow: hidden;
-    /* align-self: flex-end; */
 }
 
 
@@ -142,8 +135,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 2rem;
-    gap: 1vw;
-    /* flex: 2 1; */
+    gap: 2vw;
 }
 
 /* .main__left-section */
@@ -156,7 +148,6 @@ main{
 }
 .main__img {
     width: 100%;
-    /* height: max-content; */
     margin-bottom: 1rem;
     
 }
@@ -164,8 +155,7 @@ main{
     display: none;
 }
 .main__left-section > h1 {
-    width: 40%;
-    /* display: block; */
+    width: 50%;
     font-size: 3rem;
     color: var(--Very-dark-blue);
     font-weight: 800;
@@ -173,7 +163,7 @@ main{
     line-height: 3.1rem;
 }
 .main__left-section div{
-    width: 60%;
+    width: 50%;
     position: relative;
     }
 .main__left-section div p{
@@ -227,7 +217,7 @@ main{
 }
 .main__new-articles article h2{
     color: var(--off-white);
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.8rem;
 }
 .main__new-articles article h2:hover{
     color: var(--soft-orange);
@@ -238,40 +228,49 @@ main{
 }
 
 
-/* under-articles */
+/* under-sections */
 
-.under-articles {
+.under-sections {
     margin-top: 2rem;
     display: flex;
     justify-content: space-between;
-    gap: 0.2em;
+    gap: 0.5em;
 }
-.under-articles__item{
+.under-sections__item{
     flex: 33%;
-    /* display: flex; */
+    display: flex;
+    gap: 1rem;
+    /* flex-flow: row; */
 }
 
-.under-articles__item h1:first-of-type {
+.under-sections__item h1:first-of-type {
     font-size: 2rem;
     color: var(--grayish-blue);
 }
-.under-articles__item h2:hover,
-.under-articles__item h2:focus {
+.under-sections__item h2{
+    font-weight: 700;
+}
+.under-sections__item h2:hover,
+.under-sections__item h2:focus {
     color: var(--soft-red);
     cursor: pointer;
 }
-.under-articles__item img{
-    max-width: 30%;
-    float: left;
-    margin-right: 0.5em;
+.under-sections__item img{
+    max-width: 29%;
+    
 }
-
-/* END: under-articles */
+.under-sections__item section {
+    flex: 55%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+}
+/* END: under-sections */
 
 
 .attribution {
     display: block;
-    margin: 1rem;
+    margin: 5rem;
 }
 
 @media all and (max-width: 375px) {
@@ -370,7 +369,7 @@ main{
     .main__new-articles{
         flex: 100%;
     }
-    .under-articles{
+    .under-sections{
         flex-direction: column;
         gap: 1rem;
     }
@@ -411,29 +410,24 @@ main{
         gap: 1.5vw;
     }
 
-    /* UNDER-ARTICLES: */
-    .under-articles {
+    /* under-sections: */
+    .under-sections {
         margin-top: 2rem;
         display: flex;
         justify-content: space-between;
     }
-    .under-articles__item{
+    .under-sections__item{
         flex: 31%;
         display: flex;
         flex-direction: column;
     }
     
-    .under-articles__item h1:first-of-type {
+    .under-sections__item h1:first-of-type {
         align-self: left;
     }
-    .under-articles__item h2:hover,
-    .under-articles__item h2:focus {
-    }
-    .under-articles__item > img{
-        align-self: center;
-        max-width: 90%;
+    .under-sections__item > img{
+        /* align-self: center; */
+        max-width: 80%;
         height: auto;
-        float: left;
-        margin-right: 1em;
     }
 }
