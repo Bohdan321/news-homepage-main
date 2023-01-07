@@ -45,8 +45,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [news-homepage-main](https://bohdan321.github.io/news-homepage-main/)
+- Solution URL: [news-homepage-main](https://bohdan321.github.io/news-homepage-main/)
+
 
 ## My process
 
