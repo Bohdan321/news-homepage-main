@@ -34,6 +34,7 @@ h1{
     /* text-indent: 0.2px; */
 }
 html, body{
+    background-color: var(--off-white);
     height: 100%;
 }
 
@@ -176,6 +177,8 @@ main{
     }
 .main__left-section div p{
     margin-bottom: 1rem;
+    line-height: 1.3em;
+    text-align: justify;
 }
 .main__left-section div button{
     background-color: var(--soft-red);
@@ -207,7 +210,8 @@ main{
     align-items: left;
 
     background-color: var(--Very-dark-blue);
-    padding: 1em;
+    padding: 1em 1em 3em 1em;
+    
 }
 .main__new-articles > h1{
     color: var(--soft-orange);
