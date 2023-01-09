@@ -13,15 +13,12 @@
     box-sizing: border-box;
     font-size: 15px;
     color: var(--Very-dark-blue);
-    
-    
 }
 
 :root{
     /* Width of Devices */
     --Mobile: 375px;
     --Desktop: 1440px;
-    
     /* Primary colors: */
     --soft-orange: hsl(35, 77%, 62%);
     --soft-red: hsl(5, 85%, 63%);
@@ -49,7 +46,6 @@ body{
     margin-right: 8%;
     max-width: 90vw;
 }
-
 
 
 /* header */
